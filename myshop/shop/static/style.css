@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&display=swap');
+
+    * {
+    font-family: "Playwrite ES";
+    }
+
+    img {
+    width: 250px;
+    height: 250px;
+    }
+
+    .product {
+    border: 1px black solid;
+    display: flex;
+    height: 250px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    }
+
+    .product * {
+    background-color: gray;
+    }
+
+
+
+    h2 {
+    width: 150px;
+    }
+
+    h1 {
+    color:
+    }
+
+    div {
+
+    }
+
+    p {
+    width: 700px;
+    }
+
+    button {
+    margin-left: auto;
+    }

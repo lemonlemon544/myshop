@@ -6,54 +6,9 @@
 </head>
 <body>
 
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&display=swap');
 
-    * {
-    font-family: "Playwrite España";
-    }
-
-    img {
-    width: 250px;
-    height: 250px;
-    }
-
-    .product {
-    border: 1px black solid;
-    display: flex;
-    height: 250px;
-    margin-top: 20px;
-    background-color: white;
-    border-radius: 20px;
-    padding: 10px;
-    }
-
-    .product * {
-    background-color: gray;
-    }
-
-
-
-    h2 {
-    width: 150px;
-    }
-
-    h1 {
-    color:
-    }
-
-    div {
-    margin-top: 20px;
-    }
-
-    p {
-    width: 700px;
-    }
-
-    button {
-    margin-left: auto;
-    }
-</style>
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
 
 <h1><span style="color: #c613f2">net</span>Shop</h1>
 <a href="/">Главная</a>
@@ -61,8 +16,9 @@
 <a href="/aboutus">О нас</a>
 
 <div class="product">
+    <img src='https://znatokpotolka.ru/wp-content/uploads/2020/08/potolochnaya-lyustra-v-spalnyu.jpg'>
     <div>
-        <img src='https://znatokpotolka.ru/wp-content/uploads/2020/08/potolochnaya-lyustra-v-spalnyu.jpg'>
+
         <h2>Люстра</h2>
         <p>Люстра - это нужно</p>
     </div>
@@ -70,8 +26,9 @@
 </div>
 
 <div class="product">
+    <img src='https://www.vosem56.ru/upload/iblock/ed1/ed1c1f6785b1d1352869dad005cd0222.png'>
     <div>
-        <img src='https://www.vosem56.ru/upload/iblock/ed1/ed1c1f6785b1d1352869dad005cd0222.png'>
+
         <h2>ПК</h2>
         <p>oh my pccccc</p>
     </div>
