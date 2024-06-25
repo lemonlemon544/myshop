@@ -7,8 +7,10 @@
 <body>
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&display=swap');
+
     * {
-    font-family: Arial;
+    font-family: "Playwrite España";
     }
 
     img {
@@ -16,19 +18,28 @@
     height: 250px;
     }
 
-    .lustr {
-    border: 5px black solid;
+    .product {
+    border: 1px black solid;
     display: flex;
-
+    height: 250px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
     }
 
-    .pc {
-    border: 5px black solid;
-    display: flex;
+    .product * {
+    background-color: gray;
     }
+
+
 
     h2 {
     width: 150px;
+    }
+
+    h1 {
+    color:
     }
 
     div {
@@ -39,14 +50,17 @@
     width: 700px;
     }
 
+    button {
+    margin-left: auto;
+    }
 </style>
 
-<h1>netShop</h1>
+<h1><span style="color: #c613f2">net</span>Shop</h1>
 <a href="/">Главная</a>
 <a href="/products">Товары</a>
 <a href="/aboutus">О нас</a>
 
-<div class="lustr">
+<div class="product">
     <div>
         <img src='https://znatokpotolka.ru/wp-content/uploads/2020/08/potolochnaya-lyustra-v-spalnyu.jpg'>
         <h2>Люстра</h2>
@@ -55,11 +69,13 @@
     <button>Buy</button>
 </div>
 
-<div class="pc" style='border: 5px black solid'>
-    <img src='https://www.vosem56.ru/upload/iblock/ed1/ed1c1f6785b1d1352869dad005cd0222.png'>
-    <h2>ПК</h2>
-    <p>oh my pccccc</p>
-
+<div class="product">
+    <div>
+        <img src='https://www.vosem56.ru/upload/iblock/ed1/ed1c1f6785b1d1352869dad005cd0222.png'>
+        <h2>ПК</h2>
+        <p>oh my pccccc</p>
+    </div>
+    <button>Buy</button>
 </div>
 </body>
 </html>
