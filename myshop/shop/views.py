@@ -3,5 +3,8 @@ from django.shortcuts import render
 
 # Create your views here.
 def home(requests):
-    return render(requests, 'index.html')
+    products = Product.objects.all()
 
+    return render(requests, "index.html", {
+        'products': products
+    })
