@@ -1,68 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&display=swap');
 
-    * {
-        font-family: "Playwrite ES";
-    }
+html, body {
+    background-color: #ececec;
+    padding: 0;
+    margin: 0;
+}
 
-    img {
+* {
+    font-family: "Playwrite ES";
+}
 
+h1 {
+    font-size: 40px;
+    color: #0021f3;
+    font-style: italic;
+    margin: 0;
 
-    }
+    margin-right: 40px;
+}
 
-    .product {
-        display: flex;
-        height: 250px;
-        margin-top: 20px;
-        background-color: white;
-        border-radius: 20px;
-        padding: 10px;
-    }
+img {
+    width: 200px;
+    height: 200px;
+}
 
-    .price {
-        margin-left: auto;
-        text-align: center;
-    }
+.product {
+    display: flex;
+    flex-direction: row;
 
-    .product_list {
-        border: 1px black solid;
-    }
+    height: 250px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
 
-    .product * {
-        background-color: gray;
-        width: 60%;
-    }
-
-    .navigation {
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-    }
-
+    width: 60%;
+}
 
 
-    h2 {
-        width: 150px;
-    }
+.product_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    h1 {
-        margin: 0;
-    }
 
-    a {
-        margin-left: 20px;
-        text-decoration: none;
-        font-size: 20px;
+h2 {
+    width: 300px;
+}
 
-    }
+p {
+    width: 700px;
+}
 
-    div {
+button {
+    margin-left: auto;
+}
 
-    }
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    height: 70px;
+}
 
-    p {
-        width: 700px;
-    }
+a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #0021f3;
+    font-size: 20px;
+    cursor: pointer;
+}
 
-    button {
-        margin-left: auto;
-    }
+button {
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.price {
+    margin-left: auto;
+    text-align: center;
+}
