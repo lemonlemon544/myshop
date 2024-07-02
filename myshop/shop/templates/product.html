@@ -1,1 +1,23 @@
-Product
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+<div class="navigation">
+
+<h1><span style="color: #05016a">Нет</span>Магазин</h1>
+
+<a href="/">Главная</a>
+<a href="/products">Товары</a>
+<a href="/aboutus">О нас</a>
+
+</div>
+
+<div class="productDetails">
+    <img src="/static/monocoleso.png">
+    <div>
+        <h1>Продукт</h1>
+        <div class="productPrice">
+            <p>100 рублей</p>
+            <button>Купить</button>
+        </div>
+    </div>
+</div>
