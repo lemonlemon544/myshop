@@ -1,48 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-
 {% load static %}
 <link rel="stylesheet" href="{% static 'style.css' %}">
 
 <div class="navigation">
 
-    <h1><span style="color: #c613f2">net</span>Shop</h1>
-    <a href="/">Главная</a>
-    <a href="/products">Товары</a>
-    <a href="/aboutus">О нас</a>
+<h1><span style="color: #05016a">Нет</span>Магазин</h1>
 
+<a class="navlink" href="/">Главная</a>
+<a class="navlink" href="/products">Товары</a>
+<a class="navlink" href="/aboutus">О нас</a>
 
 </div>
 
+<div class="productList">
 
-
-<div class="product_list">
-    {% for product in products %}
-    <div class="product">
-    <img src='{{product.image_url}}'>
-    <div>
-
-        <h2>{{product.name}}</h2>
-        <p>{{product.description}}</p>
-        <div class="price">
-            <h3>{{product.price}} ₽</h3>
-            <button>Купить</button>
-
-        </div>
+{% for product in products %}
+<div class="product">
+    <img class="productPreview" src="{{ product.image_url }}"/>
+    <div style="width: 50%">
+        <a href="/product/{{ product.id }}">
+            <h2>{{ product.name }}</h2>
+        </a>
+        <p>{{ product.description }}</p>
     </div>
 
+    <div class="price">
+        <h3>{{ product.price }} ₽</h3>
+        <button>Купить</button>
+    </div>
 </div>
 {% endfor %}
 
 </div>
-
-
-
-</body>
-</html>
