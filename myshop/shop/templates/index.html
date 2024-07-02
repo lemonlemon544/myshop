@@ -23,36 +23,22 @@
 
 
 <div class="product_list">
-
+    {% for product in products %}
     <div class="product">
-    <img src='https://znatokpotolka.ru/wp-content/uploads/2020/08/potolochnaya-lyustra-v-spalnyu.jpg'>
+    <img src='{{product.image_url}}'>
     <div>
 
-        <h2>Люстра</h2>
-        <p>Люстра - это нужно</p>
+        <h2>{{product.name}}</h2>
+        <p>{{product.description}}</p>
         <div class="price">
-            <h3>19 990 ₽</h3>
+            <h3>{{product.price}} ₽</h3>
             <button>Купить</button>
 
         </div>
     </div>
 
 </div>
-
-<div class="product">
-    <img src='https://www.vosem56.ru/upload/iblock/ed1/ed1c1f6785b1d1352869dad005cd0222.png'>
-    <div>
-
-        <h2>ПК</h2>
-        <p>oh my pccccc</p>
-        <div class="price">
-            <h3>19 990 ₽</h3>
-            <button>Купить</button>
-
-        </div>
-    </div>
-
-</div>
+{% endfor %}
 
 </div>
 
