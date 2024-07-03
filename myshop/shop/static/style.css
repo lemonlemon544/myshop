@@ -26,7 +26,7 @@ h1 {
 
 .productImage {
     max-width: 50%;
-    max-height: 50%;
+    max-height: auto;
 }
 
 .product {
@@ -48,6 +48,29 @@ h1 {
     flex-direction: column;
     align-items: center;
 }
+
+.filter {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchInput {
+    font-size: 20px;
+    border: none;
+    background-color: #efefef;
+    padding: 11px;
+    border-radius: 10px;
+    width: 100%;
+    margin-right: 10px;
 
 
 button {

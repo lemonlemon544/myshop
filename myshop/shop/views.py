@@ -6,6 +6,8 @@ from .models import Product
 # Create your views here.
 
 def home(request):
+    print(request.GET)
+
     products = Product.objects.all()
 
     return render(request, "index.html", {
