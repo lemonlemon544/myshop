@@ -160,3 +160,9 @@ button {
     width: 100%;
     margin-right: 10px;
 }
+
+.review {
+    background-color: #efefef;
+    padding: 10px;
+    border-radius: 10px;
+}

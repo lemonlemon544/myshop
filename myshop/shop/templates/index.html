@@ -45,19 +45,15 @@
 {% endfor %}
 
 {% if not products_found %}
-<svg
-        style="font-size: 200px"
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      viewBox="0 0 24 24"
+
+    <svg
+      viewBox="0 0 20 20"
+      style="font-size: 200px; margin-top: 30px; "
+      fill="currentColor"
       height="1em"
       width="1em"
     >
-      <path stroke="none" d="M0 0h24v24H0z" />
-      <path d="M3 7v4a1 1 0 001 1h3M7 7v10M10 8v8a1 1 0 001 1h2a1 1 0 001-1V8a1 1 0 00-1-1h-2a1 1 0 00-1 1zM17 7v4a1 1 0 001 1h3M21 7v10" />
+      <path d="M4 2h16l-3 9H4a1 1 0 100 2h13v2H4a3 3 0 010-6h.33L3 5 2 2H0V0h3a1 1 0 011 1v1zm1 18a2 2 0 110-4 2 2 0 010 4zm10 0a2 2 0 110-4 2 2 0 010 4z" />
     </svg>
     <h2>Таких продуктов в нашем магазине ещё нет</h2>
 {% endif %}

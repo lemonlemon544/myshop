@@ -23,6 +23,51 @@
 </div>
 
 <div class="productDescription">
+    <h2>Характеристики:</h2>
+
+    {% if product.speed %}
+        <p>Скорость: {{ product.speed }} км/ч</p>
+    {% endif %}
+
+    {% if product.ram %}
+        <p>Размер оперативной памяти: {{ product.ram }} ГБ</p>
+    {% endif %}
+</div>
+
+<div class="productDescription">
     <h2>Описание:</h2>
     <p>{{ product.description }}</p>
+</div>
+
+<div class="productDescription">
+    <h2>Отзывы:</h2>
+
+    {% for review in reviews %}
+    <div class="review">
+        <h3>{{ review.author }}</h3>
+        <h3>Оценка:
+            {% if review.rating == 0 %}
+            <span style="color: red">отрицательная</span>
+            {% else %}
+            <span style="color: green">положительная</span>
+            {% endif %}
+        </h3>
+        <h3>Срок использования: {{ review.usage_duration }} месяцев</h3>
+        <p>{{ review.text }}</p>
+    </div>
+    {% endfor %}
+
+    <form class="createReview" method="post">
+        {% csrf_token %}
+        <label for="author">Автор:</label>
+        <input name="author">
+        <label for="rating">Оценка:</label>
+        <input name="rating">
+
+        <label for="duration">Срок использования (в месяцах):</label>
+        <input name="duration">
+        <label for="review">Текст отзыва:</label>
+        <textarea name="review"></textarea>
+        <button id="publishButton">Опубликовать</button>
+    </form>
 </div>
